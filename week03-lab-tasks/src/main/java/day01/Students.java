@@ -11,16 +11,12 @@ public class Students {
         heights.add(height);
     }
     public boolean isHeightsIncreasing(){
-        int flag = 0;
+        boolean flag = true;
         for (int i = 1; i < heights.size(); i++){
-            if (heights.get(i) > heights.get(i-1)){
-                flag++;
+            if (heights.get(i) < heights.get(i-1)){
+                flag = false;
+                return flag;
             }
-        }
-        if (flag > 0){
-            return false;
-        }else{
-            return true;
-        }
+        }return flag;
     }
 }
