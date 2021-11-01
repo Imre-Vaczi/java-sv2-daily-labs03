@@ -3,7 +3,7 @@ package day02;
 public class Mathematics {
 
     public boolean isPrime(int number){
-        if (number == 1 | number == 0){
+        if (number <= 1){
             return false;
         }
         else if (number == 2 | number == 3){
