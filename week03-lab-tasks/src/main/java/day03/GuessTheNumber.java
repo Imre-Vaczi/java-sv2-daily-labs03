@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class GuessTheNumber {
     Scanner scanner = new Scanner(System.in);
     Random objectGenerator = new Random();
-    int number = objectGenerator.nextInt(100);
+    int number = objectGenerator.nextInt(101);
 
     public String getTheNumber() {
 
