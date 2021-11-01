@@ -8,7 +8,7 @@ public class Prison {
             cells[i] = false;
         }
         for (int nap = 1; nap < 101; nap ++){
-            for (int cell = 1; cell < 101; cell = (cell + nap)){
+            for (int cell = nap; cell < 101; cell = (cell + nap)){
                 cells[cell-1] = !cells[cell-1];
             }
         }
