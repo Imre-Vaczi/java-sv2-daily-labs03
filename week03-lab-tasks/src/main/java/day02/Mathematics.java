@@ -18,10 +18,4 @@ public class Mathematics {
               }return !(divisors >0);
         }
     }
-    public static void main(String[] args) {
-        Mathematics mathematics = new Mathematics();
-        for (int i = 0; i < 14; i++){
-            System.out.println("Is " + i +" a prime number? Solution: " + mathematics.isPrime(i));
-        }
-    }
 }
